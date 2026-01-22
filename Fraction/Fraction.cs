@@ -1,6 +1,4 @@
-﻿using System.Xml.Schema;
-
-namespace Fraction
+﻿namespace Fraction
 {
     public class Fraction
     {
@@ -46,6 +44,15 @@ namespace Fraction
         public override string ToString()
         {
             return $"{Numerator}/{Denominator}";
+        }
+
+        public static Fraction operator +(Fraction a)
+        {
+            return a;
+        }
+        public static Fraction operator -(Fraction a)
+        {
+            return new Fraction(-a.Numerator, a.Denominator);
         }
     }
 }
