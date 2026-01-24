@@ -112,7 +112,7 @@
         {
             return new Fraction(a.Numerator - a.Denominator, a.Denominator);
         }
-        public static explicit operator double(Fraction a)
+        public static implicit operator double(Fraction a)
         {
             return (double)a.Numerator / a.Denominator;
         }
