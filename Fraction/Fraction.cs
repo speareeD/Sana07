@@ -96,5 +96,25 @@
         {
             return (double)a.Numerator / a.Denominator < (double)b.Numerator / b.Denominator;
         }
+        public static bool operator >=(Fraction a, Fraction b)
+        {
+            return (double)a.Numerator / a.Denominator >= (double)b.Numerator / b.Denominator;
+        }
+        public static bool operator <=(Fraction a, Fraction b)
+        {
+            return (double)a.Numerator / a.Denominator <= (double)b.Numerator / b.Denominator;
+        }
+        public static Fraction operator ++(Fraction a)
+        {
+            return new Fraction(a.Numerator + a.Denominator, a.Denominator);
+        }
+        public static Fraction operator --(Fraction a)
+        {
+            return new Fraction(a.Numerator - a.Denominator, a.Denominator);
+        }
+        public static implicit operator double(Fraction a)
+        {
+            return (double)a.Numerator / a.Denominator;
+        }
     }
 }
