@@ -54,5 +54,15 @@
         {
             return new Fraction(-a.Numerator, a.Denominator);
         }
+        public static Fraction operator +(Fraction a, Fraction b)
+        {
+            return new Fraction(a.Numerator * b.Denominator + b.Numerator * a.Denominator,
+                a.Denominator * b.Denominator);
+        }
+        public static Fraction operator -(Fraction a, Fraction b)
+        {
+            return a + -b;
+        }
+
     }
 }
