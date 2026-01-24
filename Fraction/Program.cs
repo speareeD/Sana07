@@ -6,7 +6,8 @@
         {
             Fraction one = new Fraction(1, 4);
             Fraction two = new Fraction(4, 8);
-            Fraction three = -one;
+            Fraction three = new Fraction(5);
+            Console.WriteLine(three);
             Console.WriteLine($"+{one} = {+one}");
             Console.WriteLine($"-({one}) = {-one}");
             Console.WriteLine($"{one} + {two} = {one + two}");
