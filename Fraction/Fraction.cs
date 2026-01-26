@@ -69,7 +69,7 @@
         }
         public static Fraction operator *(Fraction a, int b)
         {
-            return a * new Fraction(b, 1);
+            return a * new Fraction(b);
         }
         public static Fraction operator *(int a, Fraction b)
         {
@@ -78,6 +78,14 @@
         public static Fraction operator /(Fraction a, Fraction b)
         {
             return new Fraction(a.Numerator * b.Denominator, b.Numerator * a.Denominator);
+        }
+        public static Fraction operator /(Fraction a, int b)
+        {
+            return a / new Fraction(b);
+        }
+        public static Fraction operator /(int a, Fraction b)
+        {
+            return new Fraction(a) / b;
         }
         public static bool operator ==(Fraction a, Fraction b)
         {
