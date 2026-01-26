@@ -13,7 +13,11 @@
             Console.WriteLine($"{one} + {two} = {one + two}");
             Console.WriteLine($"{one} - {two} = {one - two}");
             Console.WriteLine($"{one} * {two} = {one * two}");
+            Console.WriteLine($"2 * {two} = {2 * two}");
+            Console.WriteLine($"{one} * 2 = {one * 2}");
             Console.WriteLine($"{one} / {two} = {one / two}");
+            Console.WriteLine($"2 / {two} = {2 / two}");
+            Console.WriteLine($"{one} / 2 = {one / 2}");
             Console.WriteLine($"{one} == {two} : {one == two}");
             Console.WriteLine($"{one} != {two} : {one != two}");
             Console.WriteLine($"{one} > {two} : {one > two}");
